@@ -19,7 +19,7 @@ ul {
   list-style: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -59,7 +59,6 @@ img {
   display: flex;
   gap: 25px;
   padding-left: 5px;
-  /* max-width: 0; */
 }
 
 .navbar {
@@ -76,7 +75,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #fff; */
 }
 
 .navbar .nav-links ul {
@@ -143,7 +141,7 @@ img {
 }
 
 .hero-section {
-  padding: 0 20px;
+  padding: 0;
 }
 
 .hero-section .container .hero-content {
@@ -206,7 +204,8 @@ img {
   color: #333;
 }
 
-.hero-section .container .hero-content .hero-image {
+.hero-section .container .hero-image {
+  max-width: 100%;
   width: 50%;
   position: relative;
   object-fit: cover;
@@ -215,26 +214,26 @@ img {
   justify-content: center;
   align-items: center;
   padding-left: 50px;
+  padding-bottom: 80px;
 }
 
 .hero-section .container .hero-content .hero-image img {
   height: 550px;
-  width: 600px;
+  width: 900px;
   position: relative;
   z-index: 2;
-  border-radius: 40px;
 }
 
 .hero-section .container .hero-content .hero-image .hero-image-background {
   position: absolute;
-  bottom: 0; /* Stick to the bottom */
-  left: 25px; /* Stick to the left */
-  width: 350px; /* Slightly smaller than full width so image can show */
-  height: 340px; /* Slightly smaller than full height */
+  bottom: 60px; /* Stick to the bottom */
+  left: 80px; /* Stick to the left */
+  width: 280px; /* Slightly smaller than full width so image can show */
+  height: 320px; /* Slightly smaller than full height */
 
   background-color: #008000; /* Green background */
   z-index: 1;
-  border-radius: 40px; /* Behind the image */
+  border-radius: 30px; /* Behind the image */
 }
 
 .main {
@@ -246,19 +245,19 @@ img {
   display: flex;
   justify-content: center;
   gap: 0px;
-
 }
 
 .main-images {
   position: relative; /* Needed so absolute positioning works */
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  max-width: 550px;
   padding: 15px;
-
 }
 
 .main-images img {
-  max-width: 500px;
+  /* max-width: 500px; */
+  /* width: 100%; */
   height: auto;
   border-radius: 20px;
 }
@@ -344,7 +343,7 @@ img {
 }
 
 .main .main-content .main-text {
-padding: 20px;
+  padding: 20px;
   width: 50%;
 }
 .main .main-content .main-text .main-heading {
@@ -438,28 +437,26 @@ padding: 20px;
   border-radius: 50px;
 }
 
-.grid-card{
+.grid-card {
   padding: 20px;
   background-color: #d3d3d3;
 }
-.grid-card .container-sm .grid-card-content{
-text-align: center;
-  
+.grid-card .container-sm .grid-card-content {
+  text-align: center;
 }
-.grid-card .container-sm .grid-card-content h2{
+.grid-card .container-sm .grid-card-content h2 {
   font-size: 2.5rem;
   color: #000080;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.grid-card .container-sm .grid-card-content  p{
+.grid-card .container-sm .grid-card-content p {
   font-size: 0.9rem;
   color: #333;
   font-weight: 400;
   margin-bottom: 35px;
-  
 }
-.grid-card .container-sm .grid-card-content .grid-card-items{
+.grid-card .container-sm .grid-card-content .grid-card-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -468,24 +465,22 @@ text-align: center;
 /* White box shadow for the whole card */
 .card-1 {
   background: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   padding: 30px;
   border-radius: 25px;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-.card-items span{
-font-size: 0.9rem;
+.card-items span {
+  font-size: 0.9rem;
   color: #333;
   font-weight: 400;
 }
-
-
 
 /* utilities class */
 .container {
@@ -609,21 +604,17 @@ font-size: 0.9rem;
     z-index: 1;
   }
   .main .container .main-content {
-  
-flex-direction: column;
-  
-
-}
-.btn .btn-primary {
+    flex-direction: column;
+  }
+  .btn .btn-primary {
     width: 100%;
-  
   }
   .main-images {
     width: 100%;
     padding: 0;
     margin: 0 auto;
   }
- .main-images img {
+  .main-images img {
     width: 100%;
     height: auto;
   }
@@ -639,17 +630,20 @@ flex-direction: column;
   .main-images .info-box {
     width: 100%;
     left: -12px;
-   top: 80%;
+    top: 80%;
     transform: translateX(0);
     padding: 10px;
     font-size: 0.8rem;
   }
 
+  .main .main-content .main-text {
+    padding: 0;
+    width: 100%;
+  }
 
-.main .main-content .main-text {
-padding: 0;
-  width: 100%;
-
-}
-
+  .grid-card .container-sm .grid-card-content .grid-card-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
