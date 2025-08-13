@@ -173,6 +173,7 @@ img {
 
 .hero-section .container .hero-content .hero-buttons {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -182,8 +183,10 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
+  /* line-height: 1; 
+  height: auto; */
 }
 
 .hero-section .container .hero-content .hero-buttons .btn-secondary i {
@@ -240,18 +243,17 @@ img {
   padding-top: 100px;
 }
 .main .container .main-content {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px; */
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+
 }
 
 .main-images {
   position: relative; /* Needed so absolute positioning works */
   display: inline-block;
   width: 50%;
+  padding: 15px;
+
 }
 
 .main-images img {
@@ -341,8 +343,7 @@ img {
 }
 
 .main .main-content .main-text {
-  /* display: flex;
-  flex-direction: column; */
+padding: 20px;
   width: 50%;
 }
 .main .main-content .main-text .main-heading {
@@ -435,6 +436,54 @@ img {
   padding: 10px 20px;
   border-radius: 50px;
 }
+
+.grid-card{
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+.grid-card .container-sm .grid-card-content{
+text-align: center;
+  
+}
+.grid-card .container-sm .grid-card-content h2{
+  font-size: 2.5rem;
+  color: #000080;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.grid-card .container-sm .grid-card-content  p{
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 35px;
+  
+}
+.grid-card .container-sm .grid-card-content .grid-card-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* White box shadow for the whole card */
+.card-1 {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card-items span{
+font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
+}
+
 
 
 /* utilities class */
