@@ -1148,8 +1148,8 @@ img {
   }
   .main .main-content .main-sub-text .rounded-icon span {
     color: #333;
-    font-size: 0.7rem;
-    font-weight: 400;
+    font-size: 0.5rem;
+    font-weight: 300;
   }
   .main .main-content .main-sub-text .rounded-icon {
     gap: 35px;
